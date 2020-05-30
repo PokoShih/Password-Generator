@@ -9,7 +9,7 @@ var generateBtn=document.querySelector("#generateBtn");
 
 // Do While loop, the code will pass on only if while statement is "false" as "true" is incorrect and will keep prompting the user
     do {
-    var length = prompt("How long would you like your password? Try to stick to 8-128 long");   
+    var length = prompt("Please enter your password length 8-128 long");   
     }
     while (8 > length || length > 128);
 
