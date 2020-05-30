@@ -4,12 +4,12 @@
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
-var symbols = "!@#$%^&*()?";
+var symbols = " !#$%&'()*+,-./:;<=>\?[]@^_`{|}~";
 var generateBtn=document.querySelector("#generateBtn");
 
 // Do While loop, the code will pass on only if while statement is "false" as "true" is incorrect and will keep prompting the user
     do {
-    var length = prompt("Please enter your password length 8-128 long");   
+    var length = prompt("Please enter your password must be 8 - 128 characters");   
     }
     while (8 > length || length > 128);
 
@@ -20,7 +20,6 @@ var generateBtn=document.querySelector("#generateBtn");
     // addEventListener for click.
     generateBtn.addEventListener("click",function (){
         var password= generatePassword();
-        console.log(password);
         var textarea = document.getElementById("password");
         textarea.innerHTML = password;
     });
